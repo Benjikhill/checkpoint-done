@@ -1,0 +1,23 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+h1 {
+  font-family: "oswald", sans-serif;
+}
+h2 {
+  font-family: "oswald", sans-serif;
+}
+h3 {
+  font-family: "oswald", sans-serif;
+  font-size: small;
+}
+.header {
+  padding: 20px 100px;
+  text-align: center;
+  background-color: #3ec70b;
+}
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+}
