@@ -2,7 +2,7 @@
 *:after {
   box-sizing: border-box;
 }
-body {
+html {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   background-color: #f7ec09;
@@ -59,4 +59,10 @@ a:active {
 }
 h1::after {
   content: " 😉";
+}
+#email {
+  background-color: #f7ec09;
+}
+#handy {
+  background-color: #f7ec09;
 }
