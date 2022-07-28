@@ -22,4 +22,41 @@ h3 {
   max-width: 800px;
   margin: 0 auto;
   padding: 50px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+a:link {
+  background-color: green;
+}
+a:visited {
+  background-color: lightgreen;
+}
+a:hover {
+  background-color: white;
+}
+a:active {
+  background-color: gray;
+}
+#profile {
+  padding: 20px;
+}
+#experience {
+  padding: 20px;
+}
+#skills {
+  padding: 20px;
+}
+#contact {
+  padding: 20px;
+}
+.nav-link {
+  padding: 4px 8px;
+  margin: 0px 4px;
+}
+::selection {
+  background-color: black;
+  color: white;
+}
+h1::after {
+  content: " 😉";
 }
