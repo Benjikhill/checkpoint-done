@@ -89,3 +89,12 @@ h1::after {
   background-color: #a149fa;
   color: black;
 }
+.heading-group {
+  font-size: 4rem;
+}
+.main-heading {
+  font-size: 1em;
+}
+.profession {
+  font-size: 0.25em;
+}
