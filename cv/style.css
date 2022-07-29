@@ -4,6 +4,7 @@
 }
 html {
   font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
   margin: 0;
   background-color: #f7ec09;
 }
@@ -14,17 +15,17 @@ h3 {
   color: #3b44f6;
 }
 .header {
-  padding: 20px 100px;
-  padding-top: 72px;
+  padding: 1.25rem 6.25rem;
+  padding-top: 4.5rem;
   text-align: center;
   background-color: #3ec70b;
   position: relative;
 }
 .main > * {
-  max-width: 800px;
+  max-width: 60ch;
   margin: 0 auto;
-  padding: 0 16px;
-  border-top: 2px solid black;
+  padding: 0 1rem;
+  border-top: 0.125rem solid black;
 }
 a:link {
   background-color: green;
@@ -39,22 +40,22 @@ a:active {
   background-color: gray;
 }
 #profile {
-  padding: 20px;
+  padding: 1.25rem;
 }
 #experience {
-  padding: 20px;
+  padding: 1.25rem;
 }
 #skills {
-  padding: 20px;
+  padding: 1.25rem;
 }
 #contact {
-  padding: 20px;
-  border-top: 2px solid black;
+  padding: 1.25rem;
+  border-top: 0.125rem solid black;
   background-color: #3ec70b;
 }
 .nav-link {
-  padding: 4px 8px;
-  margin: 0px 4px;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.25rem;
 }
 ::selection {
   background-color: black;
@@ -77,14 +78,14 @@ h1::after {
 }
 .article-heading {
   position: relative;
-  left: -16px;
+  left: -1rem;
 }
 .hire-me {
   position: absolute;
-  right: 16px;
-  top: 16px;
-  padding: 8px;
-  border-radius: 4px;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
   background-color: #a149fa;
   color: black;
 }
