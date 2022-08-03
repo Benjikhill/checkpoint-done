@@ -25,7 +25,10 @@ h3 {
   max-width: 60ch;
   margin: 0 auto;
   padding: 0 1rem;
-  border-top: 0.125rem solid black;
+  border-top: 0.125rem solid #3ec70b;
+}
+a {
+  border-radius: 5px;
 }
 a:visited {
   background-color: lightgreen;
@@ -44,11 +47,11 @@ a:active {
 }
 #skills {
   padding: 1.25rem;
-  border-bottom: 0.125rem solid black;
+  border-bottom: 0.125rem solid #3ec70b;
 }
 #contact {
   padding: 1.25rem;
-  background-image: linear-gradient(#f7ec09, #3ec70b);
+  background-image: linear-gradient(#f7ec09 20%, #3ec70b 80%);
 }
 .nav-link {
   padding: 0.25rem 0.5rem;
@@ -138,6 +141,16 @@ h1::after {
 @media screen and (min-width: 768px) {
   .navigation {
     flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .address {
+    display: flex;
+    flex-direction: row;
+    gap: 12rem;
+  }
+  .text {
     justify-content: center;
   }
 }
