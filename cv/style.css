@@ -2,7 +2,7 @@
 *:after {
   box-sizing: border-box;
 }
-body {
+html {
   --background-color: #f7ec09;
   --text-color: black;
   --accent-color: #3ec70b;
@@ -11,14 +11,19 @@ body {
   --text-color-white: white;
   --purple-color: #a149fa;
   --visited-color: lightgreen;
-
-  background-color: var(--background-color);
-  color: var(--text-color);
 }
-html {
+body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --background-color: black;
+    --text-color: #f7ec09;
+  }
 }
 h1,
 h2,
