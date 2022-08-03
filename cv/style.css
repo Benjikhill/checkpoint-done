@@ -2,42 +2,57 @@
 *:after {
   box-sizing: border-box;
 }
+body {
+  --background-color: #f7ec09;
+  --text-color: black;
+  --accent-color: #3ec70b;
+  --nav-link-active-bg-color: grey;
+  --ueberschrifft-color: #3b44f6;
+  --text-color-white: white;
+  --purple-color: #a149fa;
+  --visited-color: lightgreen;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   margin: 0;
-  background-color: #f7ec09;
 }
 h1,
 h2,
 h3 {
   font-family: "oswald", sans-serif;
-  color: #3b44f6;
+  color: var(--ueberschrifft-color);
 }
 .header {
   padding: 1.25rem 6.25rem;
   padding-top: 4.5rem;
   text-align: center;
-  background-image: linear-gradient(#3ec70b, #f7ec09);
+  background-image: linear-gradient(
+    var(--accent-color),
+    var(--background-color)
+  );
   position: relative;
 }
 .main > * {
   max-width: 60ch;
   margin: 0 auto;
   padding: 0 1rem;
-  border-top: 0.125rem solid #3ec70b;
+  border-top: 0.125rem solid var(--accent-color);
 }
 a {
   border-radius: 5px;
 }
 a:visited {
-  background-color: lightgreen;
+  background-color: var(--visited-color);
 }
 a:hover {
-  background-color: #a149fa;
+  background-color: var(--purple-color);
 }
 a:active {
-  background-color: gray;
+  background-color: var(--nav-link-active-bg-color);
 }
 #profile {
   padding: 1.25rem;
@@ -47,11 +62,14 @@ a:active {
 }
 #skills {
   padding: 1.25rem;
-  border-bottom: 0.125rem solid #3ec70b;
+  border-bottom: 0.125rem solid var(--accent-color);
 }
 #contact {
   padding: 1.25rem;
-  background-image: linear-gradient(#f7ec09 20%, #3ec70b 80%);
+  background-image: linear-gradient(
+    var(--background-color) 20%,
+    var(--accent-color) 80%
+  );
 }
 .nav-link {
   padding: 0.25rem 0.5rem;
@@ -60,8 +78,8 @@ a:active {
   margin-bottom: 5px;
 }
 ::selection {
-  background-color: black;
-  color: white;
+  background-color: var(--text-color);
+  color: var(--text-color-white);
 }
 h1::after {
   content: " 😉";
@@ -80,8 +98,8 @@ h1::after {
   top: 1rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  background-color: #a149fa;
-  color: black;
+  background-color: var(--purple-color);
+  color: var(--text-color);
 }
 .heading-group {
   font-size: 4rem;
