@@ -41,6 +41,11 @@ h3 {
   );
   position: relative;
 }
+.header:hover .hire-me,
+.header:focus-within .hire-me {
+  opacity: 1;
+  transform: scale(1.5);
+}
 .main > * {
   max-width: 60ch;
   margin: 0 auto;
@@ -109,8 +114,11 @@ h1::after {
   top: 1rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
+  opacity: 0.5;
   background-color: var(--purple-color);
   color: var(--text-color);
+  transform-origin: top right;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
 .heading-group {
   font-size: 4rem;
