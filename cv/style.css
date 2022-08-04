@@ -81,6 +81,12 @@ a:active {
   margin: 0 0.25rem;
   border-radius: 5px;
   margin-bottom: 5px;
+  transition: background-color 0.5s ease-in-out;
+}
+.nav-link:focus {
+  background-color: var(--background-color);
+  outline-color: var(--text-color);
+  outline-style: dotted;
 }
 ::selection {
   background-color: var(--text-color);
@@ -111,6 +117,18 @@ h1::after {
 }
 .main-heading {
   font-size: 1em;
+}
+#email {
+  transition: background-color 0.5s ease-in-out;
+}
+#handy {
+  transition: background-color 0.5s ease-in-out;
+}
+#email:focus {
+  background-color: var(--accent-color);
+}
+#handy:focus {
+  background-color: var(--accent-color);
 }
 .profession {
   font-size: 0.25em;
