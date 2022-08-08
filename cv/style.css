@@ -46,11 +46,24 @@ h3 {
   opacity: 1;
   transform: scale(1.5);
 }
-.main > * {
+.main-article {
   max-width: 60ch;
   margin: 0 auto;
   padding: 0 1rem;
   border-top: 0.125rem solid var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .main-article {
+    display: grid;
+    grid-template-columns: 1fr Auto Auto;
+  }
+}
+.main-article-content {
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.footer {
+  margin: 0 auto;
 }
 a {
   border-radius: 5px;
@@ -69,6 +82,7 @@ a:active {
 }
 #experience {
   padding: 1.25rem;
+  display: grid;
 }
 #skills {
   padding: 1.25rem;
@@ -98,13 +112,9 @@ a:active {
   color: var(--text-color-white);
 }
 h1::after {
-  content: " 😉";
+  content: "😉";
 }
-.experience-header {
-  display: flex;
-  flex-direction: column;
-}
-.article-heading {
+.main-article-heading {
   position: relative;
   left: -1rem;
 }
@@ -126,7 +136,7 @@ h1::after {
 .main-heading {
   font-size: 1em;
 }
-#email {
+.email {
   transition: background-color 0.5s ease-in-out;
 }
 #handy {
@@ -165,9 +175,20 @@ h1::after {
   }
 }
 @media screen and (min-width: 768px) {
-  .main > * + * {
-    margin-top: 5rem;
+  .main {
+    max-width: 80ch;
   }
+}
+@media screen and (min-width: 768px) {
+  .main > * + * {
+    margin-top: 8rem;
+  }
+  .main > *:first-child {
+    margin-top: 4rem;
+  }
+}
+.main > *:first-child {
+  border-top: none;
 }
 @media screen and (min-width: 768px) {
   .experience-header {
