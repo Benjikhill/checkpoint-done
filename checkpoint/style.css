@@ -2,9 +2,50 @@
 *:after {
   box-sizing: border-box;
 }
+:root {
+}
 body {
   max-width: 600px;
-  width: 100%;
   margin: 0 auto;
-  background-color: #e5e5e5;
+  font-family: Montserrat, sans-serif;
+  background-color: #fbfbfb;
+  border: 2px solid #6a1cc3;
+}
+h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.page-header {
+  background-color: #6a1cc3;
+  color: white;
+
+  padding-block: 1rem;
+  margin-bottom: 2rem;
+  width: auto;
+
+  box-shadow: 0 1rem 0 0 #8849cf;
+
+  display: flex;
+  gap: 2rem;
+}
+.menu-icon {
+  width: 2rem;
+  fill: white;
+}
+.Studenten {
+  color: #6a1cc3;
+}
+.input-colored {
+}
+#search {
+}
+#insearch {
+  margin: 10px 0px 10px 20px;
+  width: 80%;
+  border: none;
+}
+.searchcontainer {
+  margin: 5px;
+  border: 2px solid #6a1cc3;
+  border-radius: 3px;
 }
