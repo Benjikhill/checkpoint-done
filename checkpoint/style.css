@@ -1,0 +1,135 @@
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:root {
+}
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Montserrat, sans-serif;
+  background-color: #fbfbfb;
+  border: 2px solid #6a1cc3;
+}
+.ueberschrifft {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin: auto;
+}
+h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.page-header {
+  background-color: #6a1cc3;
+  color: white;
+
+  padding-block: 1rem;
+  margin-bottom: 2rem;
+  width: auto;
+
+  box-shadow: 0 1rem 0 0 #8849cf;
+
+  display: flex;
+  gap: 2rem;
+}
+.menu-icon {
+  fill: white;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.innercontent {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+}
+.studenten {
+  color: #6a1cc3;
+}
+.studenten > h1 {
+  margin: 0px;
+}
+.kommilitonen > h3 {
+  margin-top: 0px;
+  color: rgb(100, 100, 100);
+}
+.klasse > h3 {
+  color: rgb(100, 100, 100);
+}
+#insearch {
+  margin: 10px 0px 10px 20px;
+  width: 150%;
+  border: none;
+  color: #4b148a;
+  font-family: inherit;
+  font-size: 100%;
+}
+.selectarea {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  color: #6a1cc3;
+}
+.searchcontainer {
+  margin: 5px;
+  border: 2px solid #6a1cc3;
+  border-radius: 3px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#classes {
+  all: unset;
+  width: auto;
+  border: none;
+  padding: 5px;
+  background-position: right;
+  color: #6a1cc3;
+  font-weight: bold;
+}
+.bi-chevron-down {
+  all: unset;
+  width: auto;
+  border: none;
+  padding: 5px;
+  background-position: right;
+  color: #6a1cc3;
+  font-weight: bold;
+}
+.schueler * h2 {
+  margin-bottom: 0px;
+}
+.umrandung {
+  border: 2px solid #6a1cc3;
+  border-radius: 5px;
+  margin: 2rem;
+  display: flex;
+  color: #6a1cc3;
+}
+.person {
+  border: 1px solid #6a1cc3;
+  border-radius: 5px;
+  background-color: #6a1cc3;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+}
+.benutzer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.benutzer > h2 {
+  margin-top: 0;
+}
+.gitname {
+  text-decoration: underline;
+}
