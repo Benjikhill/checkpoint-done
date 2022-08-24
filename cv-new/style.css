@@ -2,8 +2,12 @@ html {
   box-sizing: border-box;
   font-family: Caveat;
   font-size: 1.5rem;
-  color: #f9f5eb;
-  background-color: #607eaa;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  --text-color: #f9f5eb;
+  --background-color: #607eaa;
+  --second-background-color: #1c3879;
+  --styling-color: #eae3d2;
 }
 @media screen and (min-width: 786px) {
   html {
@@ -17,6 +21,15 @@ html {
 }
 body {
   margin: 0px;
+  --background-color: #607eaa;
+}
+@media screen and (prefers-color-scheme: dark) {
+  html {
+    --background-color: black;
+  }
+  body {
+    --background-color: black;
+  }
 }
 .hire-me {
   position: absolute;
@@ -24,14 +37,14 @@ body {
   top: 1rem;
   padding: 0.5rem;
   border-radius: 0.3rem;
-  background-color: #607eaa;
-  color: #f9f5eb;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 @media screen and (min-width: 992px) {
   .hire-me {
     position: fixed;
-    background-color: #eae3d2;
-    color: #1c3879;
+    background-color: var(--styling-color);
+    color: var(--second-background-color);
   }
 }
 h1,
@@ -45,7 +58,10 @@ h6 {
 .header {
   padding: 3rem 1rem;
   text-align: center;
-  background-image: linear-gradient(#1c3879 50%, #607eaa);
+  background-image: linear-gradient(
+    var(--second-background-color) 50%,
+    var(--background-color)
+  );
 }
 .heading-group {
   font-size: 4rem;
@@ -80,14 +96,14 @@ h6 {
   }
 }
 .nav-link:hover {
-  background-color: #607eaa;
+  background-color: var(--background-color);
 }
 .nav-link:active {
-  background-color: #eae3d2;
-  color: #1c3879;
+  background-color: var(--styling-color);
+  color: var(--second-background-color);
 }
 a {
-  color: #f9f5eb;
+  color: var(--text-color);
 }
 .main {
   max-width: 60ch;
@@ -103,7 +119,7 @@ a {
   }
 }
 .main > * {
-  border-top: 2px solid #eae3d2;
+  border-top: 2px solid var(--styling-color);
   padding: 0 1rem;
 }
 .main > *:first-child {
@@ -143,5 +159,8 @@ a {
 .contact-me {
   padding: 3rem;
   text-align: center;
-  background-image: linear-gradient(#607eaa, #1c3879 75%);
+  background-image: linear-gradient(
+    var(--background-color),
+    var(--second-background-color) 75%
+  );
 }
