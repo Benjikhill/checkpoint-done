@@ -38,7 +38,15 @@ body {
   padding: 0.5rem;
   border-radius: 0.3rem;
   background-color: var(--background-color);
+  opacity: 0.5;
   color: var(--text-color);
+  transform-origin: top right;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.header:hover .hire-me,
+.header:focus-within .hire-me {
+  opacity: 1;
+  transform: scale(1.5);
 }
 @media screen and (min-width: 992px) {
   .hire-me {
@@ -89,6 +97,7 @@ h6 {
 .nav-link {
   padding: 0.3rem 0.5rem;
   border-radius: 0.3rem;
+  transition: background-color 0.5s ease-in-out;
 }
 @media screen and (min-width: 786px) {
   .nav-link + .nav-link {
@@ -101,6 +110,11 @@ h6 {
 .nav-link:active {
   background-color: var(--styling-color);
   color: var(--second-background-color);
+}
+.nav-link:focus {
+  background-color: var(--styling-color);
+  outline-color: var(--text-color);
+  outline-style: dotted;
 }
 a {
   color: var(--text-color);
