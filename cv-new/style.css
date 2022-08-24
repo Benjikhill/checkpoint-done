@@ -45,7 +45,7 @@ h6 {
 .header {
   padding: 3rem 1rem;
   text-align: center;
-  background-color: #1c3879;
+  background-image: linear-gradient(#1c3879 50%, #607eaa);
 }
 .heading-group {
   font-size: 4rem;
@@ -135,4 +135,13 @@ a {
   .navigation {
     display: none;
   }
+}
+.text {
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+.contact-me {
+  padding: 3rem;
+  text-align: center;
+  background-image: linear-gradient(#607eaa, #1c3879 75%);
 }
