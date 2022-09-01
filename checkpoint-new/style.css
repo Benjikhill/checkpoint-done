@@ -4,10 +4,12 @@ html {
 
 body {
   max-width: 600px;
+  border: 2px solid #6a1cc3;
   width: 100%;
   margin: 0 auto;
   background-color: #fbfbfb;
 }
+
 header {
   display: flex;
   justify-content: space-evenly;
@@ -30,10 +32,16 @@ h1 {
 main {
   margin: 2rem;
 }
-h2 {
+main > h2 {
   font-family: Montserrat;
   font-weight: 600;
   text-transform: uppercase;
+  margin-bottom: 0;
+  color: #6a1cc3;
+}
+h2 {
+  font-family: Montserrat;
+  font-weight: 600;
   margin-bottom: 0;
   color: #6a1cc3;
 }
@@ -111,10 +119,10 @@ h3 {
 }
 .umrandung {
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
   align-items: center;
+  gap: 4rem;
   border: 2px solid #6a1cc3;
+  border-radius: 5px;
   margin-bottom: 20px;
   box-shadow: 5px 5px 0px #6a1cc3;
 }
@@ -122,15 +130,20 @@ h3 {
   all: unset;
 }
 .bi-person {
-  width: 2rem;
-  height: 2rem;
-  padding: 20px;
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 5px;
   background-color: #6a1cc3;
   fill: #fbfbfb;
 }
-.benutzer {
+.benutzer > h2 {
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.gitname {
+  color: #6a1cc3;
 }
